@@ -49,7 +49,7 @@ Filename: make_wiki.py
 Input: wiki corpus  
 Output: tfidf and wordIds for LSA
 
-Execution Steps  
+Execution Steps:  
 Step1:  Create mm corpus using a.py file. Input is the corpus which is going to then be splitted into the train and the test set.
 
 Step 2:  Run the category_list.py file. It takes the corpus which has to be splitted into the train and the test set.This file gives three files as mentioned above.
