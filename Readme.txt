@@ -1,3 +1,5 @@
+For NuPic installation instructions, take a look into nupic_install.txt. To explore how to use HTM for classification, continue. 
+
 Pre processing
 Uses gensim to generate TFIDFs and subsequently WORDIDS. These are generated using the Wikipedia corpus by running make_wiki.py file. These TFIDFs and WORDIDs are used by LSA encoder. 
 1. Create bag of words of each sentence.(stopwords and punctuations  are removed)
@@ -52,5 +54,3 @@ Step 3:
 The output files in the above step are then given to the split_final.py file. Removes the stop words and single character words. The code in split_final.py splits refined_corpus.csv into train_set.csv and test_set.csv with ratio 90 - 10 respectively. 
 Step 4:
 Run the driver_function.py. This file takes input from the output of the previous step. This file uses lsa_encoder.py file to convert text into bit arrays by creating bow and tfidf model. These bit arrays are then passed to the spatial_pooler.py in the nupic library to get converted into Sparse Distributed Representations (SDRs). These sdrs are then passed on to the sdr_classifier.py to get trained and classify into pre-defined categories.
-
-   
