@@ -16,35 +16,43 @@ Change the training and testing file names in train_test.py file. Populate the c
 
 Files details: 
 Filename: a.py  
+
 Input: text corpus (similar to wiki corpus) 
 Output: mm corpus
 
 Filename: category_list.py 
+
 Input: training_set.csv 
 Output: category_list with labels category_count with its counts refined_training_set.csv
 
 Filename: split_final.py 
+
 Input: refined_trainig_set.csv 
 Output: splitted the training set into number of categories having equal records in it. Created train_set.csv.created test_set.csv
 
 Filename: driver_function.py  
+
 Input: test_set.csv, train_set.csv 
 Function: starts the categorization
 
 
 Filename: lsa_encoder.py 
+
 Input: mm corpus from a.py word_ids.txt from a.py 
 Output: tfidf_model model 
 Returns: bit arrays 
 
 Filename: language_encoder.py 
+
 Function: parent of lsa_encoder.py 
 
 Filename: sdr_classifier.py 
+
 Input: active indices 
 Output: probability distribution 
 
 Filename: make_wiki.py 
+
 Input: wiki corpus  
 Output: tfidf and wordIds for LSA 
 
