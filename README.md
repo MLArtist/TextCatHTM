@@ -50,15 +50,10 @@ Input: wiki corpus
 Output: tfidf and wordIds for LSA
 
 Execution Steps  
-Step1:
-Create mm corpus using a.py file. Input is the corpus which is going to then be splitted into the train and the test set.
+Step1:  Create mm corpus using a.py file. Input is the corpus which is going to then be splitted into the train and the test set.
 
-Step 2:
-Run the category_list.py file. It takes the corpus which has to be splitted into the train and the test set.
+Step 2:  Run the category_list.py file. It takes the corpus which has to be splitted into the train and the test set.This file gives three files as mentioned above.
 
-This file gives three files as mentioned above.
-Step 3:
-The output files in the above step are then given to the split_final.py file. Removes the stop words and single character words. The code in split_final.py splits refined_corpus.csv into train_set.csv and test_set.csv with ratio 90 - 10 respectively. 
+Step 3:  The output files in the above step are then given to the split_final.py file. Removes the stop words and single character words. The code in split_final.py splits refined_corpus.csv into train_set.csv and test_set.csv with ratio 90 - 10 respectively. 
 
-Step 4:
-Run the driver_function.py. This file takes input from the output of the previous step. This file uses lsa_encoder.py file to convert text into bit arrays by creating bow and tfidf model. These bit arrays are then passed to the spatial_pooler.py in the nupic library to get converted into Sparse Distributed Representations (SDRs). These sdrs are then passed on to the sdr_classifier.py to get trained and classify into pre-defined categories.
+Step 4:  Run the driver_function.py. This file takes input from the output of the previous step. This file uses lsa_encoder.py file to convert text into bit arrays by creating bow and tfidf model. These bit arrays are then passed to the spatial_pooler.py in the nupic library to get converted into Sparse Distributed Representations (SDRs). These sdrs are then passed on to the sdr_classifier.py to get trained and classify into pre-defined categories.
