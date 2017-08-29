@@ -11,7 +11,8 @@ Uses gensim to generate TFIDFs and subsequently WORDIDS. These are generated usi
 Training and testing the model 
 Change the training and testing file names in train_test.py file. Populate the category names and ids in category_list.csv file.  The predictions will be received in result_output.csv file. 
 
-Files details
+Files details:
+
 Filename: a.py
 Input: text corpus (similar to wiki corpus)
 Output: mm corpus
